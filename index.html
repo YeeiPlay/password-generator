@@ -45,8 +45,11 @@
             </button>
               <div class="btnPrymary">
                 <div class="passwordBox">
-                  <p class="muted" id="passwordBox"> Default password will Generate 10 Numbers.<br>
-                    Check toggle settings for more options.  
+                  <p class="muted" id="passwordBox"><small>Default value will generate 10 numbers only</small>
+                  <br>
+                    <small>
+                      Change settings bellow for more options.
+                    </small>
                   </p>
                 </div>
             </div>
@@ -96,21 +99,20 @@
       <br>
       <!----------- TOGGLES CHARACTER LENGTH --------------------------------------------------->
       <section class="containerTwo">
-        <h6>Password Length <small class="muted"> <hr> Default Value 10</small></h6>
-        <div class="charLength form-check form-switch">
-          <input
-          class="form-check-input"
-          type="checkbox"
-          role="switch"
-          id="charLength"
-          />
-          <strong>
-            <p class="muted">20 Characters</p>
-          </strong>
+        
+        <div class="slideContainer">
+          <input type="range" min="1" max="28" value="0" class="slider" id="sliderMain">
+          <br>
+          <br>
+          <p id="charLengText">Drag slider to change the current value.</p>
+          <p id="charLengText"><small> New Character Length: </small> <span id="sliderOutValue"></span> </p>
+          <h6 id="charLengText">
+           Default Value:  10
+          </h6>
         </div>
-      </section>
+
+      </section>    
     </div>
-  </div>
-  <script src="assets/js/main.js"></script>
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
